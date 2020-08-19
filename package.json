@@ -5,6 +5,7 @@
 	"files": [
 		"dist/**/*"
 	],
+	"publishConfig": { "registry": "https://npm.pkg.github.com/" },
 	"declaration": true,
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
