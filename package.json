@@ -1,0 +1,46 @@
+{
+	"name": "sharpsignaljs",
+	"version": "0.1.0",
+	"description": "Core JavaScript utilities and helper classes.",
+	"files": [
+		"dist/**/*"
+	],
+	"declaration": true,
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"test": "jest --watchAll",
+		"clean": "del /F/Q/S dist",
+		"build": "jest && tsc",
+		"localbuild": "jest && npm run clean && tsc",
+		"uml": "tsuml --glob ./src/**/*",
+		"tsviz": "tsviz src/result diagram.png"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/egitura/sharpsignaljs.git"
+	},
+	"author": "Steven Thys",
+	"contributors": [
+		{
+			"name": "Robbert Van Hove"
+		}
+	],
+	"license": "ISC",
+	"dependencies": {
+	},
+	"devDependencies": {
+		"@babel/core": "^7.6.2",
+		"@types/lodash": "^4.14.148",
+		"@babel/preset-env": "^7.6.2",
+		"@babel/preset-typescript": "^7.6.0",
+		"@types/jest": "^24.0.18",
+		"jest": "^24.9.0",
+		"parcel": "^1.12.3",
+		"ts-jest": "^24.1.0",
+		"ts-node": "^8.4.1",
+		"tsuml": "^0.0.1-alpha.8",
+		"tsviz": "^1.0.11",
+		"typescript": "^3.6.3"
+	}
+}
