@@ -1,0 +1,2 @@
+# sharpsignaljs
+Core JavaScript Library
